@@ -1,0 +1,16 @@
+ @charset "UFT-8";
+ body {
+           background-color: rgb(228, 225, 255);
+           font-family:arial, Arial, Helvetica, sans-serif ;
+           font-size: 17px; 
+
+        }
+        h1{
+            color: rgb(238, 77, 77)5;
+        }
+        h2{
+            color: rgb(87, 87, 238);
+        }
+        p {
+            text-align: justify;
+        }
