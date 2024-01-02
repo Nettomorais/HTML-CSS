@@ -1,6 +1,9 @@
 body{
 margin: 0;
 }
+body * {
+    box-sizing: border-box
+}
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -13,8 +16,8 @@ margin: 0;
 }
 
 .main-login{
-    width: 98vw;
-    height: 98vh;
+    width: 100vw;
+    height: 100vh;
     background-color: #142D55;
     display: flex;
     justify-content: center;
@@ -30,8 +33,14 @@ margin: 0;
     flex-direction: column;
 }
 .left-login>h1{
+    font-size: 3vw;
     color: rgb(129, 252, 135); 
     font-family: var(--fonte3); 
+    margin: 4px;
+}
+.left-login-imagem {
+    width: 35vw;
+
 }
 
 .right-login{
@@ -50,7 +59,7 @@ margin: 0;
     justify-content: center;
     align-items: center;
     flex-direction:column ;
-    padding: 30px 35px;
+    padding: 25px 30px;
     background-color: #173970;
     border-radius: 10px;
     box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.349);
@@ -100,6 +109,11 @@ margin: 0;
     color: rgb(208, 208, 253);;
 
 }
+
+.btn-login:hover{
+ background-color: rgb(35, 122, 39);;
+}
+
 .btn-login {
     width: 100%;
     padding: 17px 0px;
@@ -115,4 +129,33 @@ margin: 0;
     box-shadow:0px, 20px, 0px rgba(0, 0, 0, 0.363);
 
 }
+@media only screen and (max-width:950px) {
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
 
+    .left-login >h1 {
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .left-login-imagem{
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
